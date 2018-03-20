@@ -1,4 +1,4 @@
-package mum;
+package wap.guessme.controllers;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class Registration
  */
-@WebServlet("/LoginServlet")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/register")
+public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
     /**
-     * Default constructor. 
+     * @see HttpServlet#HttpServlet()
      */
-    public LoginServlet() {
+    public RegistrationServlet() {
+        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -26,7 +27,20 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		String gamerName = request.getParameter("name");
+		String emailAddress = request.getParameter("email");
+		String password = request.getParameter("password");
+		String fullName = request.getParameter("fullName");
+		String gender = request.getParameter("gender");
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	/**
